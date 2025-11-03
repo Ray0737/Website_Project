@@ -17,8 +17,7 @@ The website primarily focuses on:
 4.  **Activities Highlights:** 
 ---
 
-**Current Version:** 1.0.0 | **Latest Edit:** November 2, 2025
-Website Link: https://tri001.infinityfreeapp.com/# 
+**Current Version:** 1.0.0 | **Latest Edit:** November 2, 2025 | Website Link: https://tri001.infinityfreeapp.com/# 
 
 ## ⚠️ IMPORTANT NOTE
 
