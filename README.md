@@ -1,4 +1,4 @@
-# Trilingual Programme Mocked Up Website (NON OFFICIAL)
+# Trilingual Programme Website (NON OFFICIAL)
 
 ## Introduction
 
