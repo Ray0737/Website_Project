@@ -1,4 +1,4 @@
-# Trilingual Programme Website Prototype (SPSM)
+# Trilingual Programme Mocked Up Website (NON OFFICIAL)
 
 ## Introduction
 
