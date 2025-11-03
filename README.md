@@ -1,26 +1,33 @@
-# Trilingual Programme Website (NON OFFICIAL)
+## 🇹🇭 Trilingual Programme Website (Non-Official)
 
-## Introduction
-
-This website serves as both a **technical project** and an **informational resource**.
-It was created to practice and demonstrate skills in **HTML, CSS, and Bootstrap**, while providing comprehensive details about the **Trilingual Programme** at **Satit Prasarnmit Demonstration School (Secondary)**.
+### Introduction
+This website functions as both a **technical project** and an **informational resource**. It was specifically designed to practice and showcase proficiency in **HTML, CSS, and Bootstrap**, while providing comprehensive information about the **Trilingual Programme** at **Satit Prasarnmit Demonstration School (Secondary)**.
 
 ---
 
-## Key Content Sections
+### Key Content & Navigation
 
-The website primarily focuses on:
+The site is structured into several main sections:
 
-1.  **Information & Announcement:** (Updates and general details)
-2.  **Frequently Asked Questions (FAQ):** (Details about the program, e.g., comparison with SPIP and Chinese language requirements)
-3.  **Curriculum & Studying Details:** (Accessed via the main navigation)
-4.  **Gallery & Year Book:** (Image gallery and a link to the external **Tri 1 Year Book**)
-5.  **Activities Highlights (2022-2025):** (Visual highlights of recent activities)
-6.  **Login Portal:** (A dedicated section for user sign-in)
+* **Information & Announcement:** General details and program updates.
+* **Frequently Asked Questions (FAQ):** Answers regarding program differences (e.g., TRI vs. SPIP) and Chinese language prerequisites.
+* **Curriculum & Studying Details:** In-depth information about the educational program (accessed via the main navigation).
+* **Gallery & Year Book:** A visual image gallery and a direct link to the external **Tri 1 Year Book** resource.
+* **Activities Highlights (2022-2025):** A visual showcase of recent student activities.
+* **Login Portal:** A dedicated section for user sign-in.
+
 ---
 
-**Current Version:** 1.1.0 | **Latest Edit:** November 3, 2025 | Website Link: https://tri001.infinityfreeapp.com/# 
+### Project Status & Link
 
-## ⚠️ IMPORTANT NOTE
+| Detail | Value |
+| :--- | :--- |
+| **Current Version** | 1.1.0 |
+| **Latest Edit** | November 3, 2025 |
+| **Website Link** | https://tri001.infinityfreeapp.com/# |
 
-Please ensure you check the file paths for pictures (e.g., `pic\...`) before uploading the file to a new server to ensure all images display correctly.
+---
+
+### ⚠️ Deployment Note
+
+When deploying to a new server, please **verify all image file paths** (e.g., `pic\...`) to ensure that every picture displays correctly across the site.
