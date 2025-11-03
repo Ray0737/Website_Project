@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tri 1 Year Book (Bootstrap)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style type="text/css">
+        .bg-spsm-red {
+            background-color: #C41616 !important;
+        }
+
+        body {
+            text-align: center;
+            font-family: 'line_seed_sans_th', Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: black;
+            padding-top: 56px;
+        }
+
+        .center-align p,
+        .center-align ul,
+        .center-align h2 {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center-align p {
+            text-align: justify;
+        }
+
+        .center-align ul {
+            text-align: left;
+        }
+
+        .gallery-text-content {
+            max-width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Styles for the upper announcement panels (4:5 ratio) */
+        .announcement-image-panel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            /* Specific height for announcement */
+            width: 360px;
+            /* Specific width for 4:5 aspect ratio */
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+
+        /* Styles for the lower gallery panels */
+        .gallery-image-panel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .rotating-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* Added opacity transition for smooth rotation */
+            transition: opacity 1s ease-in-out;
+            opacity: 1;
+            /* Ensure initial visibility */
+        }
+
+
+        .login-section {
+            background-color: #C41616;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .form-group {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .submit-button {
+            background-color: #0F52BA !important;
+            border-color: #0F52BA !important;
+        }
+
+        .submit-button:hover {
+            box-shadow: 0 0 15px 2px rgba(0, 128, 255, 0.9);
+            background-color: rgba(0, 128, 255, 0.9) !important;
+        }
+
+        .reset-button {
+            background-color: #ff2400 !important;
+            border-color: #ff2400 !important;
+        }
+
+        .reset-button:hover {
+            box-shadow: 0 0 15px 2px rgba(244, 67, 54, 0.9);
+            background-color: #da190b !important;
+        }
+
+        .gal {
+            background-color: #ffff;
+            border-radius: 10px;
+            padding: 20px
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://bit.ly/3CZa0Sz" type="text/css" charset="utf-8" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-spsm-red fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\Artboard 11 copy 3300.png"
+                    alt="SPSM Logo" height="50" class="d-inline-block align-text-top me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index-home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-curriculum.html">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://www.canva.com/design/DAGlXAnj04g/s8ybINcAZ4xbusIWLOtSUg/view?utm_content=DAGlXAnj04g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6c56c3c4b7"
+                            target="_blank">Tri 1 Year Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://home.e-spsm.online/" target="_blank">SPSM Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="banner-area pt-4 pb-4">
+        <div class="container text-center mb-4">
+            <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\channels4_banner.jpg"
+                alt="SPSM Banner" title="SPSM" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="container">
+            <h1 class="text-black mb-1 fw-bold">Trilingual Programme
+            </h1>
+            <p class="fs-5 text-black">Engage - Encourage - Enhance | Satit Prasarnmit Demonstration School (Secondary)
+            </p>
+        </div>
+    </div>
+
+
+    <br><br>
+
+
+    <div class="center-align">
+        <h2
+            style="background-color: #C41616; color: #ffff ; font-size: 20px; padding: 13px 13px; border-radius: 10px;font-weight: bold">
+            Information & Announcment:
+        </h2>
+        <br>
+        <div id="rotating-announcement-section" class="container pt-4 pb-4">
+            <div class="row justify-content-center mt-2">
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="announcement-image-panel rounded shadow">
+                        <img id="announcement-panel-1" class="rotating-image"
+                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\561248488_804365835675941_2988095871441963660_n-819x1024.jpg"
+                            alt="Announcement Photo 1">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="announcement-image-panel rounded shadow">
+                        <img id="announcement-panel-2" class="rotating-image"
+                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\565639864_807895538656304_384900366994149942_n.jpg"
+                            alt="Announcement Photo 2">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="announcement-image-panel rounded shadow">
+                        <img id="announcement-panel-3" class="rotating-image"
+                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\565768132_807895598656298_2102241727219381970_n.jpg"
+                            alt="Announcement Photo 3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+
+
+    <br><br>
+
+
+    <div class=" center-align">
+        <h2
+            style="background-color: #C41616; color: #ffff ; font-size: 20px; padding: 13px 13px; border-radius: 10px;font-weight: bold">
+            Fequently Asked Questions:
+        </h2>
+        <br><br>
+        <h5 style="text-align: left; width: 70%; margin-left: auto; margin-right: auto;font-weight: bold;">
+            What is the differences between TRI and SPIP?</h5>
+        <br>
+        <p style="font-size: 18px">
+            Besides the basic subjects under Thailand's Basic Education Core Curriculum B.E. 2551,
+            the Trilingual learning model offers additional subjects in English and Chinese.
+            This is in line with the objective of developing students to be 21st-century global citizens.
+        </p>
+        <br>
+        <h5 style="text-align: left; width: 70%; margin-left: auto; margin-right: auto;font-weight: bold;">
+            Can one apply to the program without any prior knowledge of Chinese? </h5>
+        <br>
+        <p style="font-size: 18px; text-align: left;">
+            Yes. Students in the first year of Secondary School (Mathayom 1) in the Trilingual learning model will start
+            learning Chinese characters together.
+            Throughout the three-year period, students will practice communication skills in various situations and
+            learn the necessary grammar to handle those situations.
+        </p>
+
+    </div>
+
+
+    <br><br>
+
+    <div class=" center-align">
+        <h2
+            style="background-color: #C41616; color: #ffff ; font-size: 20px; padding: 13px 13px; border-radius: 10px;font-weight: bold">
+            Activities Highlight (2022-2025):
+        </h2>
+    </div>
+
+    <div id="rotating-gallery-section" class="container pt-4 pb-4 center-align">
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-md-4 mb-3">
+                <div class="gallery-image-panel rounded shadow">
+                    <img id="panel-1" class="rotating-image"
+                        src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\DSC_7922.JPG"
+                        alt="Gallery Photo 1">
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="gallery-image-panel rounded shadow">
+                    <img id="panel-2" class="rotating-image"
+                        src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\DSC_7863.JPG"
+                        alt="Gallery Photo 2">
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="gallery-image-panel rounded shadow">
+                    <img id="panel-3" class="rotating-image"
+                        src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\465287418_542824475163413_5649050936581654103_n.jpg"
+                        alt="Gallery Photo 3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    ---
+    <br>
+
+    <br>
+
+    <div class="mt-5">
+        <p class="fs-6 text-center bg-spsm-red text-white p-3 mb-0">
+            Ig: trilingual.spsm | Fb: Trilingual Programme SPSM | Website: https://home.e-spsm.online/ |
+            Telephone: 02-260-9986 | Address: SPSM Building 01, Room 1700
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // CRITICAL NOTE: These are ABSOLUTE WINDOWS PATHS and will ONLY work on the local machine at this exact location.
+        // I have standardized the separators to forward slashes for better JS compatibility, which usually still works for local file protocol in browsers.
+        const imageSources = [
+            // Your 6 new images (Index 0 to 5) -> Used for Announcements
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/561248488_804365835675941_2988095871441963660_n-819x1024.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/565639864_807895538656304_384900366994149942_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/565768132_807895598656298_2102241727219381970_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/565785885_807895588656299_723089080067186588_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/566193865_807895565322968_461393086236872837_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/571325187_814706344641890_4897784149821732638_n.jpg",
+
+            // Remaining old images (Index 6 onwards) -> Used for Gallery
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/DSC_7922.JPG",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/DSC_7863.JPG",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/465287418_542824475163413_5649050936581654103_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/486423127_642365861875940_709192378402304923_n (1).jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/484335649_636780762434450_3125505797560551410_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/484022839_637048749074318_8955368586513428392_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/386188890_299106879535175_626706730553788098_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/474805520_598403142938879_551716397751766571_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/475347559_602485179197342_3034029394249760225_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/319894951_816981432935376_2996982437305005877_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/485802002_643152755130584_1408985419266088787_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/IMG20240621153645.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/448702839_453513864094475_5190900359445295342_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/453627583_478418371604024_8136677897216897765_n.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/PSM_7867.JPG"
+        ];
+
+        // Separate Image Sets
+        const announcementImageSources = imageSources.slice(0, 6); // First 6 images
+        const galleryImageSources = imageSources.slice(6); // Remaining images
+
+        const announcementTotalImages = announcementImageSources.length;
+        const galleryTotalImages = galleryImageSources.length;
+
+        const intervalTime = 10000; // 10 seconds
+        const rotationStep = 3; // Step by 3 to show a new set of 3 images
+
+        // Separate indices for independent rotation
+        let announcementStartIndex = 0;
+        let galleryStartIndex = 0;
+
+        // Function to rotate an image with a fade effect.
+        function rotateImage(panel, newSrc) {
+            // Check if the source is actually different to avoid unnecessary transitions
+            if (panel.src.endsWith(newSrc.replace(/\\/g, '/'))) return; // Path normalization for comparison
+
+            const tempImage = new Image();
+            tempImage.onload = () => {
+                // FADE OUT
+                panel.style.opacity = '0';
+                // Wait for the fade-out to complete (1000ms from CSS) before changing source and fading in
+                setTimeout(() => {
+                    // Normalize the path back to the browser-friendly absolute path if needed
+                    panel.src = newSrc.replace(/\\/g, '/');
+                    // FADE IN
+                    panel.style.opacity = '1';
+                }, 1000); // Wait time matches CSS transition time
+            };
+            tempImage.onerror = () => {
+                console.error(`Error loading image from path: ${newSrc}`);
+                // Optional: set a placeholder image on error
+                // panel.src = "placeholder.jpg"; 
+            };
+            // This starts the image loading in the background
+            tempImage.src = newSrc.replace(/\\/g, '/');
+        }
+
+        // Function to change the Announcement images (rotating by 3)
+        function changeAnnouncementImages() {
+            const panels = [
+                document.getElementById('announcement-panel-1'),
+                document.getElementById('announcement-panel-2'),
+                document.getElementById('announcement-panel-3')
+            ];
+
+            panels.forEach((panel, index) => {
+                const imageIndex = (announcementStartIndex + index) % announcementTotalImages;
+                const newSrc = announcementImageSources[imageIndex];
+                rotateImage(panel, newSrc);
+            });
+
+            // Advance the starting index by rotationStep (3) for the next rotation
+            announcementStartIndex = (announcementStartIndex + rotationStep) % announcementTotalImages;
+        }
+
+
+        // Function to change the main Gallery images (rotating by 3)
+        function changeGalleryImages() {
+            const panels = [
+                document.getElementById('panel-1'),
+                document.getElementById('panel-2'),
+                document.getElementById('panel-3')
+            ];
+
+            panels.forEach((panel, index) => {
+                const imageIndex = (galleryStartIndex + index) % galleryTotalImages;
+                const newSrc = galleryImageSources[imageIndex];
+                rotateImage(panel, newSrc);
+            });
+
+            // Advance the starting index by rotationStep (3) for the next rotation
+            galleryStartIndex = (galleryStartIndex + rotationStep) % galleryTotalImages;
+        }
+
+        // Initial setup and rotation call
+        document.addEventListener('DOMContentLoaded', () => {
+            // Ensure initial image opacity is 1
+            document.querySelectorAll('.rotating-image').forEach(img => {
+                img.style.opacity = '1';
+            });
+
+            // Call rotation functions immediately to set the first batch
+            changeAnnouncementImages();
+            changeGalleryImages();
+        });
+
+
+        // Initialize the rotation for both sections
+        setInterval(changeAnnouncementImages, intervalTime);
+        setInterval(changeGalleryImages, intervalTime);
+    </script>
+
+
+</body>
+
+</html>

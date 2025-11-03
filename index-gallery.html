@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tri 1 Year Book (Bootstrap)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style type="text/css">
+        .bg-spsm-red {
+            background-color: #C41616 !important;
+
+        }
+
+        body {
+            text-align: center;
+            font-family: 'line_seed_sans_th', Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: black;
+            padding-top: 56px;
+        }
+
+        .center-align p,
+        .center-align ul,
+        .center-align h2 {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center-align p {
+            text-align: justify;
+        }
+
+        .center-align ul {
+            text-align: left;
+        }
+
+        .gallery-text-content {
+            max-width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .rotating-image-panel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .rotating-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 1s ease-in-out;
+        }
+
+
+        .login-section {
+            background-color: #C41616;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .form-group {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .submit-button {
+            background-color: #0F52BA !important;
+            border-color: #0F52BA !important;
+        }
+
+        .submit-button:hover {
+            box-shadow: 0 0 15px 2px rgba(0, 128, 255, 0.9);
+            background-color: rgba(0, 128, 255, 0.9) !important;
+        }
+
+        .reset-button {
+            background-color: #ff2400 !important;
+            border-color: #ff2400 !important;
+        }
+
+        .reset-button:hover {
+            box-shadow: 0 0 15px 2px rgba(244, 67, 54, 0.9);
+            background-color: #da190b !important;
+        }
+
+        .gal {
+            background-color: #ffff;
+            border-radius: 10px;
+            padding: 20px
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://bit.ly/3CZa0Sz" type="text/css" charset="utf-8" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-spsm-red fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\Artboard 11 copy 3300.png"
+                    alt="SPSM Logo" height="50" class="d-inline-block align-text-top me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index-home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-curriculum.html">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index-gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://www.canva.com/design/DAGlXAnj04g/s8ybINcAZ4xbusIWLOtSUg/view?utm_content=DAGlXAnj04g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6c56c3c4b7"
+                            target="_blank">Tri 1 Year Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://home.e-spsm.online/" target="_blank">SPSM Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="banner-area pt-4 pb-4">
+        <div class="container text-center mb-4">
+            <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\channels4_banner.jpg"
+                alt="SPSM Banner" title="SPSM" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="container">
+            <h1 class="text-black mb-1 fw-bold">Trilingual Programme
+            </h1>
+            <p class="fs-5 text-black">Engage - Encourage - Enhance | Satit Prasarnmit Demonstration School (Secondary)
+            </p>
+        </div>
+    </div>
+
+    <div id="gallery-section" class="center-align container pt-4 pb-4">
+        <h2 class="bg-spsm-red text-white fs-5 p-3 rounded d-inline-block"
+            style="margin-bottom: 1rem; width:50%;font-weight: bold">
+            Trilingual 01 Gallery: (M.1 | 2022)
+        </h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\1.1.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.1(1) | Total: 30 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content " style="text-align: center;">
+                    Echo, Patter, Boom, Jay, Sydney, Boat, Pun, Thunder, Foto, Victor, Pun, Zen, Fifa, Linlin, Namwan,
+                    Dream,Proud, Aoey, Nada, Aomsin, Pearl, Boni, Nubthong, Preaw, Im, Few, Maemie, Fasai, Fae, Jow
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\1.2.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.1(2) | Total: 29 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Aiko, Pai, Pluem, Mew, Monnet, Tangman, Bright, Munich, Aime, Ping, Jeda, Safety, Cartoon, Boom,
+                    Cha-V, Pun
+                    Pun, Opor, Ne Ne, Pleng, Nean, Prant, Plum, Louis, Think, Achi, Panghom, O, Pancake, Tan
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\1.3.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.1(3) | Total: 30 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Patty, Jacky, Plum, Ban, Jedi, Airry, Beer, Japan, Zen, Fah, Singha, Meji, Vegas, Hero, Sun Sun,
+                    Tintin,
+                    A-na, Chin, Asia, Baitoey, Bua, Pai, Maple, Sukee, Thann, Grace, Ami, Atom, Bam Bam, Punn
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\1.4.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.1(4) | Total: 27 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Thank You, Boon, Tartar, Jean, Nuer, Kira, Tigger, Ploy Pin, Jean, Poon, Puth, Sugus, Get, Kao, Win,
+                    Paint,
+                    Kanom Cake, Dee Too, Kiwi, Bookkie, Nicha, Mochi, Paiijang, Giw, Gustin, Miw-Miw, Prom
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\1.5.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.1(5) | Total: 30 Students</h3>
+                <br>
+
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Ploysai, Tay, Atom, Junjaow, Ray, Zihan, Wawa, Proud, Nammon, Auto, Nabua, Moke, Punn, Korn, Tiggy,
+                    Earth,
+                    Rhung, Thew, Seen, Bamboo, Namjai, Pim, Uea, Pinky, Teya, Pahm, Gut, Amie, Panda, Plan
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\1.6.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.1(6) | Total: 30 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Phakkad, Urban, Amp, Pun Pun, Brave, Nami, Benz, Auto, Arwin, Padow, Grun, Percy, Merge, Bun Bun,
+                    Green,
+                    Kiddee, Aki, Ta, Supreme, Mai, Algae, Porjai, Vessel, Kaohom, Cooper, Yu, Naknan, Sun, Yogurt, Yuko
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br>
+
+
+    <div id="gallery-section" class="center-align container pt-4 pb-4">
+        <h2 class="bg-spsm-red text-white fs-5 p-3 rounded d-inline-block"
+            style="margin-bottom: 1rem; width:50%;font-weight: bold">
+            Trilingual 01 Gallery: (M.2 | 2023)
+        </h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\2.1.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.2(1) | Total: 35 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content " style="text-align: center;">
+                    Nubthong, Pleum, Mew, Few, Baan, Pun pun, Sydney, Jedi, proud, Benz, Bright, Fifa, Ping, Pearl,
+                    Moke, Jeda, Padow,
+                    Peak, Boni, Sugus, Korn, Winston, Paint, Kiwi, Tintin, Nean, Algae, Asia, Pim, Think, Pai, Vessel,
+                    Aomsin, Yuko, Plan
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\2.2.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.2(2) | Total: 35 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Pai, Ploysai, Phakkad, tatar, Amp, Atom, Wawa, Nammon, Beer, Ploypin, Arwin, Fah, Merge, get, Boom,
+                    Thew, Vegas, BunBun, Poonya, Cha-V,
+                    KanomCake, Opor, Pleng, Chin, Bua, Paichan, Victor, Sukee, Ami, Teya, teya, Miw-Miw, Sun, O, Bam
+                    Bam, Kit
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\2.3.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.2(3) | Total: 36 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Thankyou, Patty, jean, Aoey, Aime, Japan, Zen, Thun, Safety, Carton, Grun, Puth, Pun, Tiggy, Green,
+                    Hero, D2, Nene, Prant, Plum, Putter, Louis,
+                    Ashi, Giw, Grace, Maemie, Gustine, Panghom, Yu, Naknan, Proud, Linlin, Gut, Prom, Pancake, Ray
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\2.4.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.2(4) | Total: 36 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Tay, Urban, Jacky, Namwan, Nuer, Im, Plum, Nami, Tigger, Auto, Auto, Foto, Jean, Singha, Rhung, Kao,
+                    Seen, Pun Pun, Sun Sun, Aki,
+                    Ta, Supreme, Bookie, Zen, Mai, Nicha, Mochi, Maple, Uea, kaohom, Echo, Pinky, Jay, Cooper, Panda,
+                    Tan
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\2.5.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.2(5) | Total: 36 Students</h3>
+                <br>
+
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Aiko, Boon, Fae, Junjaow, Ray, Kira, Zihan, Brave, Boat, Tangman, Airry, Munich, Nabua, Fasai, Poon,
+                    Percy, Meiji, Earth, Nada, Kiddee,
+                    Preaw, A-na, Jow, Bamboo, Namjai, Porjai, Baitoey, Thann, Atom, Dream, Pahm, Yoghurt, Amie, Punn,
+                    Pun, Mario
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br>
+
+
+    <div id="gallery-section" class="center-align container pt-4 pb-4">
+        <h2 class="bg-spsm-red text-white fs-5 p-3 rounded d-inline-block"
+            style="margin-bottom: 1rem; width:50%;font-weight: bold">
+            Trilingual 01 Gallery: (M.3 | 2024)
+        </h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\3.1.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.3(1) | Total: 43 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content " style="text-align: center;">
+                    Nubthong, Pai, Tay, Boon, Tartar, Amp, Fay, Mew, Jacky, Im, Few, Pun Pun, Wawa, Brave, Benz, Boat,
+                    Ploy Pin, Aime, Japan, Peak, Poon, Puth, Meji, Get, Kao,
+                    Sun Sun, Opor, Preaw, Bookie, Bamboo, Asia, Pim, Baitoey, Ashi, Aomsin, Paichan, Victor, Cooper,
+                    Naknan, O, Bam Bam, Punn, Mulan
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\3.2.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.3(2) | Total: 43 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Aiko, Urban, Patty, Junjaow, Jean, Zihan, Ban, Sydney, Nami, Proud, Nammon, Beer, Munich, Nabua,
+                    Zen, Jean, Arwin, Grun, Singha, Merge, Boni, Korn, Rhung, Bun Bun, Seen, Green,
+                    Kiddee, Aki, Nean, Zen, A-na, Namjai, Porjai, Louis, Mochi, Grace, Teya, Jay, Miw-Miw, Yu, Proud,
+                    Lin Lin, Yoghurt
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\3.3.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.3(3) | Total: 43 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Phakkad, Atom, Namwan, Nuer, Kira, Jedi, Tigger, Tangman, Airry, Fifa, Auto, Ping, Fasai, Pearl,
+                    Fah, Padow, Cartoon, Punn, Sugus,
+                    Earth, Vegas, Cha-V, Kanom Cake, Dee Too, Ne Ne, Supreme, Pleng, Prant, Think, Pai, Nicha, Vessel,
+                    Maple,
+                    Giw, Sukee, Uea, Atom, Sun, Panda, Tan, Ray, Kit, Mario
+                </p>
+            </div>
+            <div class="col-12 col-md-8 col-lg-6 mb-5">
+                <img class="img-fluid rounded shadow mb-3"
+                    src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\3.4.jpg" alt="Openhouse"
+                    title="Openhouse 2024">
+                <br>
+                <br>
+                <h3 class="text-black fs-5 fw-bold">M.3(4) | Total: 43 Students</h3>
+                <br>
+                <p class="fs-6 text-black gallery-text-content" style="text-align: center;">
+                    Thank You, Ploysai, Pluem, Ray, Plum, Auto, Bright, Aoey, Foto, Jeda, Safety, Percy, Tiggy, Boom,
+                    Pun, Winston, Paint, Hero, Nada,
+                    Ta, Kiwi, Tintin, Mai, Plum, Algae, Jow, Chin, Patter, Bua, Thann, Maemie, Kaohom, Echo, Gustine,
+                    Pinky,
+                    Panghom, Pahm, Gut, Yuko, Amie, Prom, Plan, Pun
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+    <div class="mt-5">
+        <p class="fs-6 text-center bg-spsm-red text-white p-3 mb-0">
+            Ig: trilingual.spsm | Fb: Trilingual Programme SPSM | Website: https://home.e-spsm.online/ |
+            Telephone: 02-260-9986 | Address: SPSM Building 01, Room 1700
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+
+    <script>
+        const imageSources = [
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\DSC_7922.JPG",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\DSC_7863.JPG",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\465287418_542824475163413_5649050936581654103_n.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\486423127_642365861875940_709192378402304923_n (1).jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\484335649_636780762434450_3125505797560551410_n.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\484022839_637048749074318_8955368586513428392_n.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\386188890_299106879535175_626706730553788098_n.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\474805520_598403142938879_551716397751766571_n.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\475347559_602485179197342_3034029394249760225_n.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\\\319894951_816981432935376_2996982437305005877_n.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\\\485802002_643152755130584_1408985419266088787_n.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\IMG20240621153645.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\448702839_453513864094475_5190900359445295342_n.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\453627583_478418371604024_8136677897216897765_n.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\PSM_7867.JPG"
+
+        ];
+
+        let currentImageIndices = [0, 1, 2];
+
+        // 3. Function to change the images
+        function changeImages() {
+            const panels = [
+                document.getElementById('panel-1'),
+                document.getElementById('panel-2'),
+                document.getElementById('panel-3')
+            ];
+
+            panels.forEach((panel, index) => {
+                currentImageIndices[index] = (currentImageIndices[index] + 3);
+                if (currentImageIndices[index] >= imageSources.length) {
+                    currentImageIndices[index] = currentImageIndices[index] % imageSources.length;
+                }
+
+                panel.src = imageSources[currentImageIndices[index]];
+            });
+        }
+
+        setInterval(changeImages, 10000); 
+    </script>
+</body>
+
+</html>

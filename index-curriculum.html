@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tri 1 Year Book (Bootstrap)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style type="text/css">
+        .bg-spsm-red {
+            background-color: #C41616 !important;
+
+        }
+
+        body {
+            text-align: center;
+            font-family: 'line_seed_sans_th', Arial, sans-serif;
+            background-color: #f1f1f1;
+            color: black;
+            padding-top: 56px;
+        }
+
+        .center-align p,
+        .center-align ul,
+        .center-align h2 {
+            max-width: 65%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center-align p {
+            text-align: justify;
+        }
+
+        .center-align ul {
+            text-align: left;
+        }
+
+        .gallery-text-content {
+            max-width: 90%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .rotating-image-panel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .rotating-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 1s ease-in-out;
+        }
+
+
+        .login-section {
+            background-color: #C41616;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+            text-align: left;
+            font-size: 18px;
+        }
+
+        .form-group {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .submit-button {
+            background-color: #0F52BA !important;
+            border-color: #0F52BA !important;
+        }
+
+        .submit-button:hover {
+            box-shadow: 0 0 15px 2px rgba(0, 128, 255, 0.9);
+            background-color: rgba(0, 128, 255, 0.9) !important;
+        }
+
+        .reset-button {
+            background-color: #ff2400 !important;
+            border-color: #ff2400 !important;
+        }
+
+        .reset-button:hover {
+            box-shadow: 0 0 15px 2px rgba(244, 67, 54, 0.9);
+            background-color: #da190b !important;
+        }
+
+        .gal {
+            background-color: #ffff;
+            border-radius: 10px;
+            padding: 20px
+        }
+
+
+        .table-container {
+            display: flex;
+            justify-content: center;
+            /* Centers the table horizontally */
+            margin-top: 20px;
+            /* Add some space above the table */
+        }
+
+        /* CSS to match the image's appearance and enforce equal column width */
+        .activities-table {
+            width: 65%;
+            /* Set a fixed width for the table (adjust as needed) */
+            max-width: 65%;
+            /* Maximum width for larger screens */
+            border-collapse: collapse;
+            border: 3px solid black;
+            font-family: Arial, sans-serif;
+            /* No need for margin: auto here, as the flex container handles centering */
+        }
+
+        .activities-table th,
+        .activities-table td {
+            border: 3px solid black;
+            padding: 15px 5px;
+            vertical-align: top;
+            text-align: left;
+            font-size: 16px;
+
+            /* Enforce equal column width */
+            width: 33.33%;
+        }
+
+        .activities-table th {
+            background-color: #C41616;
+            /* SPSM Red header background */
+            font-family: 'line_seed_sans_th', Arial, sans-serif;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .activities-table ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin: 0;
+        }
+
+        .activities-table li {
+            margin-bottom: 5px;
+            font-family: 'line_seed_sans_th', Arial, sans-serif;
+            text-align: left;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://bit.ly/3CZa0Sz" type="text/css" charset="utf-8" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-spsm-red fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\Artboard 11 copy 3300.png"
+                    alt="SPSM Logo" height="50" class="d-inline-block align-text-top me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index-home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index-curriculum.html">Information</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://www.canva.com/design/DAGlXAnj04g/s8ybINcAZ4xbusIWLOtSUg/view?utm_content=DAGlXAnj04g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6c56c3c4b7"
+                            target="_blank">Tri 1 Year Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index-login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://home.e-spsm.online/" target="_blank">SPSM Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="banner-area pt-4 pb-4">
+        <div class="container text-center mb-4">
+            <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\channels4_banner.jpg"
+                alt="SPSM Banner" title="SPSM" class="img-fluid rounded shadow">
+        </div>
+
+        <div class="container">
+            <h1 class="text-black mb-1 fw-bold">Trilingual Programme
+            </h1>
+            <p class="fs-5 text-black">Engage - Encourage - Enhance | Satit Prasarnmit Demonstration School (Secondary)
+            </p>
+        </div>
+    </div>
+
+
+    <br><br>
+
+
+    <div class="center-align">
+        <h2
+            style="background-color: #C41616; color: #ffff ; font-size: 20px; padding: 13px 13px; border-radius: 10px;font-weight: bold">
+            Information &
+            Details:
+        </h2>
+        <br>
+        <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\Untitled design (2).png"
+            alt="SPSM Logo" class="d-inline-block align-text-top me-2" style="border-radius: 10px ;">
+
+        <br><br>
+        <p style="font-weight: bold;font-size: 25px">Introduction:</p>
+        <p style="font-size: 18px">
+            Trilingual Program is a newly opened program of the standard curriculum at Srinakharinwirot
+            University Satit
+            Prasarnmit Demonstration School (Secondary). The program will mainly focus on language development
+            including: English, Thai, and Chinese. It also covers some other subjects like finance and
+            othercommunication skills.
+
+            The program was first introduced in around October 2021 and the first entrance exam was taken online
+            (7th
+            November 2021). There are four main subjects: Math, Science, English, and History. After the online
+            exam
+            applicants are required to submit an introduction video and create a portfolio about themselves.
+
+            The final result was announced at 26th January 2022, and thus the journey of the first generation of
+            Tri student began.
+        </p>
+    </div>
+
+
+    <br><br>
+
+
+    <div class=" center-align">
+        <h2
+            style="background-color: #C41616; color: #ffff ; font-size: 20px; padding: 13px 13px; border-radius: 10px;font-weight: bold">
+            Studying Details:
+        </h2>
+        <br>
+        <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\Untitled design (6).png"
+            alt="SPSM Logo" class="d-inline-block align-text-top me-2" style="border-radius: 10px ;">
+
+        <br><br>
+        <p style="font-weight: bold;font-size: 25px">What do we learn?</p>
+        <p style="font-size: 18px">
+            We have the same base subjects as the standard program’s curriculums. However, we have extras subject that
+            are taught by foreign teachers both from Western and Eastern world.
+            (8 periods per day | 1 period = 45minutes) |
+            In every week there’ll be a 45 minutes period for students to gather into their club sessions.
+            In the end of each semester every club also need to show their work at the club showcase events.
+        </p>
+
+        <ul style="font-size: 18px;">
+            <li> Available for students from M.1-M.6 | Juniors can walk-in to Tri major if their grade meet the bar.
+            </li>
+            <li> Students will receive a student progress report after every midterm. </li>
+            <li> At the end of every semester and academic year. There will be a certificate of appreciation
+                ceremony.
+            </li>
+            <li> Students are required to take the CEFR at the end of every academic year and HSK at the end of M.3.
+            </li>
+        </ul>
+        <br>
+        <p style="font-weight: bold;font-size: 25px">Class & Subjects:</p>
+        <p style="font-size: 18px">
+            English, Reading & Writing, Chinese (Basic), (Reading), and (Listening), Mathematics,
+            Scientific Method, Applied Science, Health, Physical Education, Swimming, Club Sessions, Global Perspective,
+            Media Literacy, Intercultural Communication, Financial Literacy, Global History, Technopreneurship,
+            English for presentation
+        </p>
+        <br>
+        <p style="font-weight: bold;font-size: 25px">Club Period:</p>
+        <p style="font-size: 18px">
+            Chinese Paradise | Word Games | Board Games | Videography | Art Attack (2D Edition) | Wonders of China |
+            Overact Society | Buskers |
+            Creative Design | Photo and editing for social media | Exploring China | French horizon | Health and Fitness
+            |
+            Digital Arts | Martial Arts | Science Crews | Model United Nation
+        </p>
+
+
+    </div>
+
+
+    <br><br>
+
+
+    <div class=" center-align">
+        <br>
+        <h2
+            style="background-color: #C41616; color: #ffff ; font-size: 20px; padding: 13px 13px; border-radius: 10px;font-weight: bold">
+            Activities throughout M.1 - M.3:
+        </h2>
+        <br>
+        <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\i3.png" alt="SPSM Logo"
+            class="d-inline-block align-text-top me-2" style="border-radius: 10px ;">
+
+        <br><br>
+        <table class="activities-table center-align container">
+            <thead>
+                <tr>
+                    <th>M.1</th>
+                    <th>M.2</th>
+                    <th>M.3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Ice Dancing Challenge</li>
+                            <li>Spelling Bee</li>
+                            <li>Narrator audition</li>
+                            <li>MC audition (Christmas)</li>
+                            <li>Christmas Costume Contest</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>House Prefect Selection</li>
+                            <li>Singing Competition</li>
+                            <li>MC auditions (Trilympic, Club Showcase, Christmas)</li>
+                            <li>Athletes for Trilympic</li>
+                            <li>Buddy Recruit (Trilympic)</li>
+                            <li>Performers (bands and dancers)</li>
+                            <li>Impromptu Speech 2023</li>
+                            <li>Word Power</li>
+                            <li>Chinese Handwriting</li>
+                            <li>Christmas Card Design Competition</li>
+                            <li>Christmas Costume Contest</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>House Prefect Selection</li>
+                            <li>Athletes for Trilympic</li>
+                            <li>Buddy Recruit (Trilympic)</li>
+                            <li>Performers (bands and dancers)</li>
+                            <li>Chinese Singing Competition</li>
+                            <li>Selection of The Young Ambassadors</li>
+                            <li>MC auditions (Trilympic, Qixi Festival, Club Showcase, Christmas)</li>
+                            <li>Vocabulary Challenge</li>
+                            <li>Storytelling</li>
+                            <li>Representative Students</li>
+                            <li>Impromptu Speech 2024</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <br><br>
+
+
+    <div class=" center-align">
+        <h2
+            style="background-color: #C41616; color: #ffff ; font-size: 20px; padding: 13px 13px; border-radius: 10px;font-weight: bold">
+            House System:
+        </h2>
+        <br>
+        <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\Untitled design (7).png"
+            alt="SPSM Logo" class="d-inline-block align-text-top me-2" style="border-radius: 10px ;">
+        <br>
+        <br>
+        <p style="font-weight: bold;font-size: 25px">Trilingual House System Overview:</p>
+        <p style="font-size: 18px">
+            Trilingual Program divides students and teachers into 4 houses (according to their colors)
+            to engage in activities together within and between houses, with a system of accumulating House Points based
+            on participation in
+            activities, competitions, and student behavior.
+            The House with the most points at the end of the school year wins the House Cup.
+        </p>
+        <br>
+        <p style="font-weight: bold;font-size: 25px">House Prefects: </p>
+        <p style="font-size: 18px">
+            A selected group of students that will be the role model for other students in the House.
+            There’ll be 6 prefects per each house including 3 Males and 3 Females (2 from each grade).
+            In total there’ll be 24 prefects in the program. The House Prefects are re-selected at the beginning of each
+            school year.
+            Prefects will be tasked to assist teachers in setting up activities and events and most of the time working
+            overtime is required.
+            All House Prefects will be given a certificate during the Appreciation Ceremony.
+            <br><br>
+            2023 : Ray, Ploypin, Jean, Bright, Ana, Bookie, Pun, Aiko, and Linlin<br>
+            2024 : Ray, Aki, Jean, Thann, Atom, Ashi, Prom, and Kiwi
+    </div>
+
+
+    <br><br>
+
+
+    <div class="center-align">
+        <h2
+            style="background-color: #C41616; color: #ffff ; font-size: 20px; padding: 13px 13px; border-radius: 10px;font-weight: bold">
+            Seasonal Camp:
+        </h2>
+        <br>
+        <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\Untitled design (0).png"
+            alt="SPSM Logo" class="d-inline-block align-text-top me-2" style="border-radius: 10px ;">
+        <br><br>
+        <p style="font-weight: bold;font-size: 25px">Destination:
+            London - United Kingdom | Harbin, Beijing - China | Singapore </p>
+        <p style="font-size: 18px">
+            Throughout the academic year, there are many overseas exchange programs. However,
+            students who wish to participate must pay an extra fee.
+            These exchange programs take place during the summer break for around 2 weeks to a month.
+            The destination is usually England or China. The only exception is the Trilympic Games,
+            Cultural and Sports Exchange program at Peicai Secondary School in Singapore.
+            All the exchange programs are organized by Gent Edutainment.
+        </p>
+        <br>
+
+        <br>
+
+    </div>
+
+
+    <br><br>
+
+
+    <div class=" mt-5">
+        <p class="fs-6 text-center bg-spsm-red text-white p-3 mb-0">
+            Ig: trilingual.spsm | Fb: Trilingual Programme SPSM | Website: https://home.e-spsm.online/ |
+            Telephone: 02-260-9986 | Address: SPSM Building 01, Room 1700
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
