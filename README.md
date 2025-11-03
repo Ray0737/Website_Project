@@ -1,4 +1,4 @@
-## 🇹🇭 Trilingual Programme Website (Non-Official)
+## Trilingual Programme Website (Non-Official)
 
 ### Introduction
 This website functions as both a **technical project** and an **informational resource**. It was specifically designed to practice and showcase proficiency in **HTML, CSS, and Bootstrap**, while providing comprehensive information about the **Trilingual Programme** at **Satit Prasarnmit Demonstration School (Secondary)**.
