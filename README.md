@@ -18,7 +18,7 @@ The website primarily focuses on:
 ---
 
 **Current Version:** 1.0.0 | **Latest Edit:** November 2, 2025
-**Website Link: https://tri001.infinityfreeapp.com/# **
+Website Link: https://tri001.infinityfreeapp.com/# 
 
 ## ⚠️ IMPORTANT NOTE
 
