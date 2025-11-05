@@ -15,6 +15,7 @@
 
         body {
             text-align: center;
+            /* Note: 'line_seed_sans_th' must be imported/available for this to work */
             font-family: 'line_seed_sans_th', Arial, sans-serif;
             background-color: #f1f1f1;
             color: black;
@@ -49,9 +50,7 @@
             justify-content: center;
             align-items: center;
             height: 450px;
-            /* Specific height for announcement */
             width: 360px;
-            /* Specific width for 4:5 aspect ratio */
             margin-left: auto;
             margin-right: auto;
             overflow: hidden;
@@ -71,12 +70,9 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            /* Added opacity transition for smooth rotation */
-            transition: opacity 1s ease-in-out;
+            transition: opacity 0.5s ease-in-out;
             opacity: 1;
-            /* Ensure initial visibility */
         }
-
 
         .login-section {
             background-color: #C41616;
@@ -132,8 +128,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-spsm-red fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\Artboard 11 copy 3300.png"
-                    alt="SPSM Logo" height="50" class="d-inline-block align-text-top me-2">
+                <img src="pic/Artboard 11 copy 3300.png" alt="SPSM Logo" height="50"
+                    class="d-inline-block align-text-top me-2">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -142,7 +138,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index-home.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index-curriculum.html">Information</a>
@@ -169,8 +165,7 @@
 
     <div class="banner-area pt-4 pb-4">
         <div class="container text-center mb-4">
-            <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\channels4_banner.jpg"
-                alt="SPSM Banner" title="SPSM" class="img-fluid rounded shadow">
+            <img src="pic/channels4_banner.jpg" alt="SPSM Banner" title="SPSM" class="img-fluid rounded shadow">
         </div>
 
         <div class="container">
@@ -196,21 +191,21 @@
                 <div class="col-12 col-md-4 mb-3">
                     <div class="announcement-image-panel rounded shadow">
                         <img id="announcement-panel-1" class="rotating-image"
-                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\561248488_804365835675941_2988095871441963660_n-819x1024.jpg"
+                            src="pic/561248488_804365835675941_2988095871441963660_n-819x1024.jpg"
                             alt="Announcement Photo 1">
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mb-3">
                     <div class="announcement-image-panel rounded shadow">
                         <img id="announcement-panel-2" class="rotating-image"
-                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\565639864_807895538656304_384900366994149942_n.jpg"
+                            src="pic/565639864_807895538656304_384900366994149942_n.jpg"
                             alt="Announcement Photo 2">
                     </div>
                 </div>
                 <div class="col-12 col-md-4 mb-3">
                     <div class="announcement-image-panel rounded shadow">
                         <img id="announcement-panel-3" class="rotating-image"
-                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\565768132_807895598656298_2102241727219381970_n.jpg"
+                            src="pic/565768132_807895598656298_2102241727219381970_n.jpg"
                             alt="Announcement Photo 3">
                     </div>
                 </div>
@@ -264,22 +259,21 @@
         <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-4 mb-3">
                 <div class="gallery-image-panel rounded shadow">
-                    <img id="panel-1" class="rotating-image"
-                        src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\DSC_7922.JPG"
+                    <img id="panel-1" class="rotating-image" src="pic/DSC_7922.JPG"
                         alt="Gallery Photo 1">
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3">
                 <div class="gallery-image-panel rounded shadow">
                     <img id="panel-2" class="rotating-image"
-                        src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\DSC_7863.JPG"
+                        src="pic/406240309_328994726546390_7750523575814428047_n.jpg"
                         alt="Gallery Photo 2">
                 </div>
             </div>
             <div class="col-12 col-md-4 mb-3">
                 <div class="gallery-image-panel rounded shadow">
                     <img id="panel-3" class="rotating-image"
-                        src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\465287418_542824475163413_5649050936581654103_n.jpg"
+                        src="pic/465287418_542824475163413_5649050936581654103_n.jpg"
                         alt="Gallery Photo 3">
                 </div>
             </div>
@@ -303,128 +297,121 @@
         crossorigin="anonymous"></script>
 
     <script>
-        // CRITICAL NOTE: These are ABSOLUTE WINDOWS PATHS and will ONLY work on the local machine at this exact location.
-        // I have standardized the separators to forward slashes for better JS compatibility, which usually still works for local file protocol in browsers.
-        const imageSources = [
-            // Your 6 new images (Index 0 to 5) -> Used for Announcements
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/561248488_804365835675941_2988095871441963660_n-819x1024.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/565639864_807895538656304_384900366994149942_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/565768132_807895598656298_2102241727219381970_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/565785885_807895588656299_723089080067186588_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/566193865_807895565322968_461393086236872837_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/571325187_814706344641890_4897784149821732638_n.jpg",
+    const imageSources = [
+        "pic/561248488_804365835675941_2988095871441963660_n-819x1024.jpg", // Moved to position 1 for natural rotation order
+        "pic/565639864_807895538656304_384900366994149942_n.jpg",
+        "pic/565768132_807895598656298_2102241727219381970_n.jpg",
+        "pic/565785885_807895588656299_723089080067186588_n.jpg",
+        "pic/566193865_807895565322968_461393086236872837_n.jpg",
+        // FIX APPLIED HERE: Changed the backslash (\) to a forward slash (/)
+        "pic/571325187_814706344641890_4897784149821732638_n.jpg",
 
-            // Remaining old images (Index 6 onwards) -> Used for Gallery
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/DSC_7922.JPG",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/DSC_7863.JPG",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/465287418_542824475163413_5649050936581654103_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/486423127_642365861875940_709192378402304923_n (1).jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/484335649_636780762434450_3125505797560551410_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/484022839_637048749074318_8955368586513428392_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/386188890_299106879535175_626706730553788098_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/474805520_598403142938879_551716397751766571_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/475347559_602485179197342_3034029394249760225_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/319894951_816981432935376_2996982437305005877_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/485802002_643152755130584_1408985419266088787_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/IMG20240621153645.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/448702839_453513864094475_5190900359445295342_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/453627583_478418371604024_8136677897216897765_n.jpg",
-            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/PSM_7867.JPG"
+        // Gallery Images start here (index 6)
+        "pic/DSC_7922.JPG",
+        "pic/DSC_7863.JPG",
+        "pic/465287418_542824475163413_5649050936581654103_n.jpg",
+        "pic/486423127_642365861875940_709192378402304923_n (1).jpg",
+        "pic/484335649_636780762434450_3125505797560551410_n.jpg",
+        "pic/484022839_637048749074318_8955368586513428392_n.jpg",
+        "pic/386188890_299106879535175_626706730553788098_n.jpg",
+        "pic/474805520_598403142938879_551716397751766571_n.jpg",
+        "pic/475347559_602485179197342_3034029394249760225_n.jpg",
+        "pic/319894951_816981432935376_2996982437305005877_n.jpg",
+        "pic/485802002_643152755130584_1408985419266088787_n.jpg",
+        "pic/IMG20240621153645.jpg",
+        "pic/448702839_453513864094475_5190900359445295342_n.jpg",
+        "pic/453627583_478418371604024_8136677897216897765_n.jpg",
+        "pic/PSM_7867.JPG"
+    ];
+
+    // Separate Image Sets
+    const announcementImageSources = imageSources.slice(0, 6);
+    const galleryImageSources = imageSources.slice(6);
+
+    const announcementTotalImages = announcementImageSources.length;
+    const galleryTotalImages = galleryImageSources.length;
+
+    const intervalTime = 10000; // 10 seconds
+    const rotationStep = 3;    // Set to 3 to rotate three images at a time
+
+    // Separate indices for independent rotation
+    let announcementStartIndex = 0;
+    let galleryStartIndex = 0;
+
+    // Helper function to handle image replacement with pre-loading and fading
+    function rotateImage(panel, newSrc) {
+        const tempImage = new Image();
+        tempImage.onload = () => {
+            // FADE OUT
+            panel.style.opacity = '0';
+            // Wait for 500ms (to match CSS transition) before changing source and fading in
+            setTimeout(() => {
+                panel.src = newSrc;
+                // FADE IN
+                panel.style.opacity = '1';
+            }, 500);
+        };
+        // This starts the image loading in the background
+        tempImage.src = newSrc;
+        tempImage.onerror = () => {
+            console.error(`Error loading image: ${newSrc}`);
+            // To ensure rotation continues even if one image fails, we might skip the current index,
+            // but for simplicity, the error will just show in the console.
+        };
+    }
+
+    // Function to change the Announcement images (rotating by 3)
+    function changeAnnouncementImages() {
+        const panels = [
+            document.getElementById('announcement-panel-1'),
+            document.getElementById('announcement-panel-2'),
+            document.getElementById('announcement-panel-3')
         ];
 
-        // Separate Image Sets
-        const announcementImageSources = imageSources.slice(0, 6); // First 6 images
-        const galleryImageSources = imageSources.slice(6); // Remaining images
-
-        const announcementTotalImages = announcementImageSources.length;
-        const galleryTotalImages = galleryImageSources.length;
-
-        const intervalTime = 10000; // 10 seconds
-        const rotationStep = 3; // Step by 3 to show a new set of 3 images
-
-        // Separate indices for independent rotation
-        let announcementStartIndex = 0;
-        let galleryStartIndex = 0;
-
-        // Function to rotate an image with a fade effect.
-        function rotateImage(panel, newSrc) {
-            // Check if the source is actually different to avoid unnecessary transitions
-            if (panel.src.endsWith(newSrc.replace(/\\/g, '/'))) return; // Path normalization for comparison
-
-            const tempImage = new Image();
-            tempImage.onload = () => {
-                // FADE OUT
-                panel.style.opacity = '0';
-                // Wait for the fade-out to complete (1000ms from CSS) before changing source and fading in
-                setTimeout(() => {
-                    // Normalize the path back to the browser-friendly absolute path if needed
-                    panel.src = newSrc.replace(/\\/g, '/');
-                    // FADE IN
-                    panel.style.opacity = '1';
-                }, 1000); // Wait time matches CSS transition time
-            };
-            tempImage.onerror = () => {
-                console.error(`Error loading image from path: ${newSrc}`);
-                // Optional: set a placeholder image on error
-                // panel.src = "placeholder.jpg"; 
-            };
-            // This starts the image loading in the background
-            tempImage.src = newSrc.replace(/\\/g, '/');
-        }
-
-        // Function to change the Announcement images (rotating by 3)
-        function changeAnnouncementImages() {
-            const panels = [
-                document.getElementById('announcement-panel-1'),
-                document.getElementById('announcement-panel-2'),
-                document.getElementById('announcement-panel-3')
-            ];
-
-            panels.forEach((panel, index) => {
-                const imageIndex = (announcementStartIndex + index) % announcementTotalImages;
-                const newSrc = announcementImageSources[imageIndex];
-                rotateImage(panel, newSrc);
-            });
-
-            // Advance the starting index by rotationStep (3) for the next rotation
-            announcementStartIndex = (announcementStartIndex + rotationStep) % announcementTotalImages;
-        }
-
-
-        // Function to change the main Gallery images (rotating by 3)
-        function changeGalleryImages() {
-            const panels = [
-                document.getElementById('panel-1'),
-                document.getElementById('panel-2'),
-                document.getElementById('panel-3')
-            ];
-
-            panels.forEach((panel, index) => {
-                const imageIndex = (galleryStartIndex + index) % galleryTotalImages;
-                const newSrc = galleryImageSources[imageIndex];
-                rotateImage(panel, newSrc);
-            });
-
-            // Advance the starting index by rotationStep (3) for the next rotation
-            galleryStartIndex = (galleryStartIndex + rotationStep) % galleryTotalImages;
-        }
-
-        // Initial setup and rotation call
-        document.addEventListener('DOMContentLoaded', () => {
-            // Ensure initial image opacity is 1
-            document.querySelectorAll('.rotating-image').forEach(img => {
-                img.style.opacity = '1';
-            });
-
-            // Call rotation functions immediately to set the first batch
-            changeAnnouncementImages();
-            changeGalleryImages();
+        panels.forEach((panel, index) => {
+            const imageIndex = (announcementStartIndex + index) % announcementTotalImages;
+            const newSrc = announcementImageSources[imageIndex];
+            rotateImage(panel, newSrc);
         });
 
+        // Advance the starting index by the rotationStep (3) for the next rotation
+        announcementStartIndex = (announcementStartIndex + rotationStep) % announcementTotalImages;
+    }
 
-        // Initialize the rotation for both sections
-        setInterval(changeAnnouncementImages, intervalTime);
-        setInterval(changeGalleryImages, intervalTime);
+
+    // Function to change the main Gallery images (rotating by 3)
+    function changeGalleryImages() {
+        const panels = [
+            document.getElementById('panel-1'),
+            document.getElementById('panel-2'),
+            document.getElementById('panel-3')
+        ];
+
+        panels.forEach((panel, index) => {
+            const imageIndex = (galleryStartIndex + index) % galleryTotalImages;
+            const newSrc = galleryImageSources[imageIndex];
+            rotateImage(panel, newSrc);
+        });
+
+        // Advance the starting index by the rotationStep (3) for the next rotation
+        galleryStartIndex = (galleryStartIndex + rotationStep) % galleryTotalImages;
+    }
+
+    // Initial call to set the opacity for the first set of images
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.rotating-image').forEach(img => {
+            img.style.opacity = '1';
+        });
+
+        // Ensure initial images are set before the interval kicks in
+        changeAnnouncementImages();
+        changeGalleryImages();
+    });
+
+
+    // Initialize the rotation for both sections
+    setInterval(changeAnnouncementImages, intervalTime);
+    setInterval(changeGalleryImages, intervalTime);
     </script>
 
 
