@@ -24,7 +24,8 @@ The site is structured into several main sections:
 | :--- | :--- |
 | **Current Version** | 1.1.2 |
 | **Latest Edit** | November 4, 2025 |
-| **Website Link** | https://tri001.infinityfreeapp.com/index.html |
+| **Website Link-1** | https://tri001.infinityfreeapp.com/index.html |
+| **Website Link-2** | https://trilingual01.infinityfreeapp.com/index.html |
 
 ---
 
