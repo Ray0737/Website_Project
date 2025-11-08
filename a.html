@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tri 1 Year Book (Bootstrap)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <style type="text/css">
+        .bg-spsm-red {
+            background-color: #C41616 !important;
+        }
+
+        body {
+            text-align: center;
+            font-family: 'line_seed_sans_th', Arial, sans-serif;
+            background-color: black;
+            color: white;
+            padding-top: 56px;
+        }
+
+        .content-heading {
+            /*background-color: #C41616;
+            color: #ffff;*/
+            font-size: 30px;
+            padding: 13px 13px;
+            /*border-radius: 10px;*/
+            font-weight: bold;
+        }
+
+        .center-align p,
+        .center-align ul,
+        .center-align h2,
+        .center-align h5 {
+            max-width: 60%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center-align p {
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        .center-align ul {
+            text-align: left;
+        }
+
+        .faq-question {
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .announcement-image-panel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+            width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+
+        .gallery-image-panel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .rotating-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 1s ease-in-out;
+            opacity: 1;
+        }
+
+        .tudum-nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .tudum-nav-links a {
+            color: white !important;
+            padding: 0 15px;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .tudum-nav-links a:hover,
+        .tudum-nav-links .active-link {
+            color: #C41616 !important;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://bit.ly/3CZa0Sz" type="text/css" charset="utf-8" />
+</head>
+
+<body>
+
+    <div class="banner-area pb-4">
+        <div class="container text-center mb-4">
+            <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\school banner.jpg"
+                alt="SPSM Banner" title="SPSM" class="img-fluid rounded shadow">
+        </div>
+        <br><br>
+
+        <div class="container" style="border-bottom: 1px solid white;padding-bottom: 7.5px;">
+            <h1 class="mb-1 fw-bold">Trilingual Programme
+            </h1>
+            <p class="fs-5 ">Engage - Encourage - Enhance | Satit Prasarnmit Demonstration School (Secondary)
+            </p>
+        </div>
+        <div class="container pt-3">
+            <ul class="tudum-nav-links">
+                <li><a class="active-link" href="a.html">Home</a></li>
+                <li><a href="b.html">Information</a></li>
+                <li><a href="f.html">Event</a></li>
+                <li><a href="c.html">Gallery</a></li>
+                <li><a href="https://www.canva.com/design/DAGlXAnj04g/s8ybINcAZ4xbusIWLOtSUg/view?utm_content=DAGlXAnj04g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6c56c3c4b7"
+                        target="_blank">Year_Book</a></li>
+                <li><a href="d.html">Login</a></li>
+                <li><a href="https://home.e-spsm.online/" target="_blank">SPSM_Home <i
+                            class="bi bi-box-arrow-up-right"></i></a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <br>
+
+    <div class="center-align">
+
+        <div id="rotating-announcement-section" class="container pt-4 pb-4"
+            style="border-bottom: 1px solid white;padding-bottom: 7.5px;">
+            <div class="row justify-content-center mt-2">
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="announcement-image-panel rounded shadow">
+                        <img id="announcement-panel-1" class="rotating-image"
+                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\p2.jpg"
+                            alt="Announcement Photo 1">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="announcement-image-panel rounded shadow">
+                        <img id="announcement-panel-2" class="rotating-image"
+                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\p1.jpg"
+                            alt="Announcement Photo 2">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="announcement-image-panel rounded shadow">
+                        <img id="announcement-panel-3" class="rotating-image"
+                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\p3.jpg"
+                            alt="Announcement Photo 3">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p class=" center-align" style="text-align: center;font-weight: bold; font-size: 15px">
+                By: Mr. Pongsakorn Jaibunlue
+            </p>
+        </div>
+        <br>
+        <p class=" center-align" style="text-align: center">
+            <span style="font-weight: bold">Incoming: </span>Trilympic Games | 14 November 2025
+        </p>
+        <div class="py-4"></div>
+    </div>
+
+    <div class=" center-align">
+
+        <div class="container " style="border-bottom: 1px solid white;padding-bottom: 7.5px;">
+            <h2 class="content-heading">
+                Fequently Asked Questions:
+            </h2>
+            <div class="py-4"></div>
+            <h5 class="faq-question" style="color: #C41616;">
+                What is the differences between TRI and SPIP?</h5>
+            <div class="py-2"></div>
+            <p style="text-align: justify;">
+                Besides the basic subjects under Thailand's Basic Education Core Curriculum B.E. 2551,
+                the Trilingual learning model offers additional subjects in English and Chinese.
+                This is in line with the objective of developing students to be 21st-century global citizens.
+            </p>
+            <div class="py-4"></div>
+            <h5 class="faq-question" style="color: #C41616;">
+                Can one apply to the program without any prior knowledge of Chinese? </h5>
+            <div class="py-2"></div>
+            <p style="text-align: justify;">
+                Yes. Students in the first year of Secondary School (Mathayom 1) in the Trilingual learning model will
+                start
+                learning Chinese characters together.
+                Throughout the three-year period, students will practice communication skills in various situations and
+                learn the necessary grammar to handle those situations.
+            </p>
+            <br>
+        </div>
+        <br>
+        <p class=" center-align" style="text-align: center">
+            <span style="font-weight: bold">Noted: </span>Data updated: 8/11/25
+        </p>
+
+    </div>
+
+    <div class="py-4"></div>
+
+    <div class=" center-align">
+        <div id="rotating-gallery-section" class="container pt-4 pb-4"
+            style="border-bottom: 1px solid white;padding-bottom: 7.5px;">
+            <div class="row justify-content-center mt-4">
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="gallery-image-panel rounded shadow">
+                        <img id="panel-1" class="rotating-image"
+                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\openhouse30.jpg"
+                            alt="Gallery Photo 1">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="gallery-image-panel rounded shadow">
+                        <img id="panel-2" class="rotating-image"
+                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\showcase31.JPG"
+                            alt="Gallery Photo 2">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                    <div class="gallery-image-panel rounded shadow">
+                        <img id="panel-3" class="rotating-image"
+                            src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\trilympic31.jpg"
+                            alt="Gallery Photo 3">
+                    </div>
+                </div>
+            </div>
+            <br>
+            ---
+        </div>
+        <br>
+        <p class=" center-align" style="text-align: center">
+            <span style="font-weight: bold">Noted: </span> This pictures are property of Trilingual Programme SPSM
+        </p>
+    </div>
+
+    <div class="mt-5">
+        <p class="fs-6 text-center bg-spsm-red text-white p-3 mb-0">
+            Ig: trilingual.spsm | Fb: Trilingual Programme SPSM | Website: https://home.e-spsm.online/ |
+            Telephone: 02-260-9986 | Address: SPSM Building 01, Room 1700
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const imageSources = [
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\p2.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\p1.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\p3.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\p4.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\p5.jpg",
+            "C:\\Users\\LENOVO\\Documents\\Lieutenant Hecker\\Primary Data\\AI\\Coding\\pic\\p6.jpg",
+
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/christmas1.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/teacher.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/mooncake.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/openhouse2.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/openhouse30.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/funfair.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/qixi.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/showcase3.png",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/showcase31.JPG",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/showcase21.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/trilympic2.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/trilympic3.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/trilympic31.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/trilympic32.jpg",
+            "C:/Users/LENOVO/Documents/Lieutenant Hecker/Primary Data/AI/Coding/pic/yesican.jpg"
+        ];
+
+        const announcementImageSources = imageSources.slice(0, 6);
+        const galleryImageSources = imageSources.slice(6);
+
+        const announcementTotalImages = announcementImageSources.length;
+        const galleryTotalImages = galleryImageSources.length;
+
+        const intervalTime = 10000;
+        const rotationStep = 3;
+
+        let announcementStartIndex = 0;
+        let galleryStartIndex = 0;
+        function rotateImage(panel, newSrc) {
+            const normalizedNewSrc = newSrc.replace(/\\/g, '/');
+            if (panel.src.endsWith(normalizedNewSrc)) return;
+
+            const tempImage = new Image();
+            tempImage.onload = () => {
+                panel.style.opacity = '0';
+                setTimeout(() => {
+                    panel.src = normalizedNewSrc;
+                    panel.style.opacity = '1';
+                }, 1000);
+            };
+            tempImage.onerror = () => {
+                console.error(`Error loading image from path: ${normalizedNewSrc}`);
+            };
+            tempImage.src = normalizedNewSrc;
+        }
+        function changeAnnouncementImages() {
+            const panels = [
+                document.getElementById('announcement-panel-1'),
+                document.getElementById('announcement-panel-2'),
+                document.getElementById('announcement-panel-3')
+            ];
+            panels.forEach((panel, index) => {
+                const imageIndex = (announcementStartIndex + index) % announcementTotalImages;
+                const newSrc = announcementImageSources[imageIndex];
+                rotateImage(panel, newSrc);
+            });
+            announcementStartIndex = (announcementStartIndex + rotationStep) % announcementTotalImages;
+        }
+        function changeGalleryImages() {
+            const panels = [
+                document.getElementById('panel-1'),
+                document.getElementById('panel-2'),
+                document.getElementById('panel-3')
+            ];
+            panels.forEach((panel, index) => {
+                const imageIndex = (galleryStartIndex + index) % galleryTotalImages;
+                const newSrc = galleryImageSources[imageIndex];
+                rotateImage(panel, newSrc);
+            });
+            galleryStartIndex = (galleryStartIndex + rotationStep) % galleryTotalImages;
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.rotating-image').forEach(img => {
+                img.style.opacity = '1';
+            });
+            changeAnnouncementImages();
+            changeGalleryImages();
+        });
+        setInterval(changeAnnouncementImages, intervalTime);
+        setInterval(changeGalleryImages, intervalTime);
+    </script>
+
+
+</body>
+
+</html>
