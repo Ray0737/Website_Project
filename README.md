@@ -23,7 +23,7 @@ The site is structured into several main sections:
 | Detail | Value |
 | :--- | :--- |
 | **Current Version** | 1.2.0 |
-| **Latest Edit** | November 4, 2025 |
+| **Latest Edit** | November 9, 2025 |
 | **Website Link** | https://trilingual01.infinityfreeapp.com/index.html |
 
 ---
