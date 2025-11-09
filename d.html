@@ -151,10 +151,37 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-spsm-red fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="pic\logo.png"
+                    alt="SPSM Logo" height="60" class="d-inline-block align-text-top me-2">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="t1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://www.canva.com/design/DAGlXAnj04g/s8ybINcAZ4xbusIWLOtSUg/view?utm_content=DAGlXAnj04g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6c56c3c4b7"
+                            target="_blank">Tri 1 Year Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://home.e-spsm.online/" target="_blank">SPSM Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <div class="banner-area pb-4">
+    <div class="banner-area pt-5 pb-4">
         <div class="container text-center mb-4">
-            <img src="C:\Users\LENOVO\Documents\Lieutenant Hecker\Primary Data\AI\Coding\pic\school banner.jpg"
+            <img src="pic/school banner.jpg"
                 alt="SPSM Banner" title="SPSM" class="img-fluid rounded shadow">
         </div>
         <br><br>
@@ -167,15 +194,13 @@
         </div>
         <div class="container pt-3">
             <ul class="tudum-nav-links">
-                <li><a href="a.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="b.html">Information</a></li>
                 <li><a href="f.html">Event</a></li>
                 <li><a href="c.html">Gallery</a></li>
-                <li><a href="https://www.canva.com/design/DAGlXAnj04g/s8ybINcAZ4xbusIWLOtSUg/view?utm_content=DAGlXAnj04g&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h6c56c3c4b7"
-                        target="_blank">Year_Book</a></li>
+              
                 <li><a class="active-link" href="d.html">Login</a></li>
-                <li><a href="https://home.e-spsm.online/" target="_blank">SPSM_Home <i
-                            class="bi bi-box-arrow-up-right"></i></a></li>
+                
             </ul>
         </div>
 
@@ -221,11 +246,55 @@
             Telephone: 02-260-9986 | Address: SPSM Building 01, Room 1700
         </p>
     </div>
-
+	
+     <div class="modal fade" id="disclaimerModal" tabindex="-1" aria-labelledby="disclaimerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white">
+                <div class="modal-header border-bottom-0">
+                    <h5 class="modal-title text-danger fw-bold" id="disclaimerModalLabel"><i class="bi bi-exclamation-triangle-fill me-2"></i>Webpage Warning:</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="fw-bold"style="text-align: left">
+                        This is login feature is still in development phase.
+                    </p>
+                    <p class="small" style="text-align: left">
+                        The login feature can only accpeted some pre keyed in users only.<br>For Testing: Username: psm024329 Password: swu024329
+                    </p>
+                </div>
+                <div class="modal-footer border-top-0 justify-content-center">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Ackowledged</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const disclaimerModal = new bootstrap.Modal(document.getElementById('disclaimerModal'));
+            disclaimerModal.show();
+        });
+        
+        function handleLogin(event) {
+            event.preventDefault(); // Stop the form from submitting normally
+            const username = document.getElementById('fname').value;
+            const messageElement = document.getElementById('loginMessage');
+            
+            // This is just a placeholder action. Real login would involve an API call.
+            messageElement.textContent = `Attempting to log in with username: ${username}...`;
+            messageElement.style.color = 'yellow';
+
+            // Simulate a result after a short delay
+            setTimeout(() => {
+                messageElement.textContent = 'Login functionality is simulated. No actual login performed.';
+                messageElement.style.color = 'white';
+            }, 1500);
+        }
+    </script>
     <script src="index.js"></script>
 
 
